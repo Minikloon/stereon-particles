@@ -28,8 +28,8 @@ public class Main extends JavaPlugin {
         float yawRadians = (float) Math.toRadians(yawDegrees);
 
         Matrix4f mat = new Matrix4f()
-                .translate(-0.2f, 0.3f, -0.2f)
                 .rotate(yawRadians, 0, -1, 0)
+                .translate(-0.2f, 0.3f, -0.2f)
                 .rotate((float) Math.PI * 1.5f, 1, 0, 0);
 
         for (double t = 0; t < Math.PI * 2; t += Math.PI / 100) {
